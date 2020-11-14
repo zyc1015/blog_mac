@@ -1,0 +1,80 @@
+INFO 2020-11-14 13:41:23,939 autoreload 613 Watching for file changes with StatReloader
+INFO 2020-11-14 13:47:10,548 autoreload 236 /Users/duandian1/Desktop/ZYC/Demo/blog/blog/settings.py changed, reloading.
+INFO 2020-11-14 13:47:11,561 autoreload 613 Watching for file changes with StatReloader
+INFO 2020-11-14 14:03:50,682 autoreload 613 Watching for file changes with StatReloader
+INFO 2020-11-14 14:04:47,850 autoreload 613 Watching for file changes with StatReloader
+INFO 2020-11-14 14:19:39,054 autoreload 613 Watching for file changes with StatReloader
+ERROR 2020-11-14 14:19:55,357 log 224 Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/core/cache/__init__.py", line 50, in _create_cache
+    backend_cls = import_string(backend)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/utils/module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'django_redis'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/contrib/sessions/middleware.py", line 24, in process_request
+    request.session = self.SessionStore(session_key)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/contrib/sessions/backends/cache.py", line 17, in __init__
+    self._cache = caches[settings.SESSION_CACHE_ALIAS]
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/core/cache/__init__.py", line 79, in __getitem__
+    cache = _create_cache(alias)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/core/cache/__init__.py", line 52, in _create_cache
+    raise InvalidCacheBackendError(
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find backend 'django_redis.cache.RedisCache': No module named 'django_redis'
+ERROR 2020-11-14 14:19:55,379 basehttp 157 "GET / HTTP/1.1" 500 97754
+ERROR 2020-11-14 14:19:56,205 log 224 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/core/cache/__init__.py", line 50, in _create_cache
+    backend_cls = import_string(backend)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/utils/module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'django_redis'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 113, in __call__
+    response = self.process_request(request)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/contrib/sessions/middleware.py", line 24, in process_request
+    request.session = self.SessionStore(session_key)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/contrib/sessions/backends/cache.py", line 17, in __init__
+    self._cache = caches[settings.SESSION_CACHE_ALIAS]
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/core/cache/__init__.py", line 79, in __getitem__
+    cache = _create_cache(alias)
+  File "/Users/duandian1/Desktop/ZYC/Demo/blog/venv/lib/python3.8/site-packages/django/core/cache/__init__.py", line 52, in _create_cache
+    raise InvalidCacheBackendError(
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find backend 'django_redis.cache.RedisCache': No module named 'django_redis'
+ERROR 2020-11-14 14:19:56,284 basehttp 157 "GET /favicon.ico HTTP/1.1" 500 97654
+INFO 2020-11-14 14:22:46,194 autoreload 613 Watching for file changes with StatReloader
+INFO 2020-11-14 14:24:43,942 autoreload 613 Watching for file changes with StatReloader
+INFO 2020-11-14 14:24:46,517 urls 25 info
+INFO 2020-11-14 14:24:46,520 basehttp 157 "GET / HTTP/1.1" 200 4
+WARNING 2020-11-14 14:24:46,902 log 224 Not Found: /favicon.ico
+WARNING 2020-11-14 14:24:46,905 basehttp 157 "GET /favicon.ico HTTP/1.1" 404 2070
